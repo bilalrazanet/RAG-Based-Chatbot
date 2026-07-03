@@ -1,0 +1,6 @@
+.venv/
+__pycache__/
+*.pyc
+faiss_store/
+.DS_Store
+.vscode/
