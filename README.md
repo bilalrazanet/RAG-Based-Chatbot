@@ -46,11 +46,14 @@ http://127.0.0.1:8000
 .venv\Scripts\python.exe rag_chatbot.py
 ```
 
-### Model flow
+Then type questions and press Enter to interact.
 
-1. Load the PDF file from the project folder.
-2. Split text into chunks.
-3. Create semantic embeddings.
-4. Store vectors in FAISS.
-5. Retrieve relevant chunks for each query.
-6. Generate answers with the LLM.
+## PDF input
+
+Place your PDF file in the project folder. The application will load and process the PDF automatically.
+
+## Notes
+
+- The first run may take time while the PDF is split and the vector store is built.
+- The FAISS index is stored locally so subsequent runs can reuse the embedding data.
+- This project uses local models and does not require an external API key.
